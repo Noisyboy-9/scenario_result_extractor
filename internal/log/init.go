@@ -17,7 +17,7 @@ var (
 )
 
 func Init() {
-	App := logrus.New()
+	App = logrus.New()
 
 	App.SetFormatter(&runtime.Formatter{
 		ChildFormatter: &logrus.JSONFormatter{},
