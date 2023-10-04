@@ -8,7 +8,7 @@ import (
 )
 
 func LoadViper() {
-	configPath := "configs/config.yaml"
+	configPath := "configs/general.yaml"
 	viper.SetConfigFile(configPath)
 	if err := viper.ReadInConfig(); err != nil {
 		panic(fmt.Errorf("config file in path: %s can't be found", configPath))
