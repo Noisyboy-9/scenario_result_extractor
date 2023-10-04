@@ -16,16 +16,16 @@ type httpServer struct {
 var HttpServer *httpServer
 
 func InitHttpServer() {
-	httpServer := new(httpServer)
-	httpServer.e = *echo.New()
+	HttpServer = new(httpServer)
+	HttpServer.e = *echo.New()
+	HttpServer.e.HideBanner = true
 
-	httpServer.registerRoutes()
+	HttpServer.registerRoutes()
 
 	serverUrl := fmt.Sprintf("%s:%d", config.HttpServer.Host, config.HttpServer.Port)
-	if err := httpServer.e.Start(serverUrl); err != nil {
+	if err := HttpServer.e.Start(serverUrl); err != nil {
 		log.App.WithField("err", err.Error()).Fatalf("can't start web server")
 	}
-
 }
 
 func (server *httpServer) registerRoutes() {

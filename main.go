@@ -9,8 +9,6 @@ import (
 func main() {
 	config.LoadViper()
 	config.Init()
-
 	log.Init()
-
 	service.Init()
 }
