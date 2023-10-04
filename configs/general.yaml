@@ -2,3 +2,6 @@ httpServer:
   host: "localhost"
   port: 8080
 
+logging:
+  stdout: true
+  level: "debug"
