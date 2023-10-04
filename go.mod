@@ -2,9 +2,13 @@ module github.com/noisyboy-9/golang_api_template
 
 go 1.21.0
 
-require github.com/spf13/viper v1.16.0
+require (
+	github.com/sirupsen/logrus v1.9.3
+	github.com/spf13/viper v1.16.0
+)
 
 require (
+	github.com/banzaicloud/logrus-runtime-formatter v0.0.0-20190729070250-5ae5475bae5e // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
