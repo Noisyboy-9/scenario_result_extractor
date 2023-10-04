@@ -3,6 +3,7 @@ package config
 import (
 	"fmt"
 
+	"github.com/noisyboy-9/golang_api_template/internal/log"
 	"github.com/spf13/viper"
 )
 
@@ -18,6 +19,6 @@ func Init() {
 	HttpServer = new(httpServer)
 	err := viper.UnmarshalKey("httpServer", HttpServer)
 	if err != nil {
-		// fatal log
+		log.App.Fatal(err)
 	}
 }
