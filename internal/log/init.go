@@ -17,7 +17,7 @@ var (
 )
 
 func Init() {
-	App = logrus.New()
+	App := logrus.New()
 
 	App.SetFormatter(&runtime.Formatter{
 		ChildFormatter: &logrus.JSONFormatter{},
@@ -33,13 +33,9 @@ func Init() {
 		App.SetOutput(os.Stdout)
 	}
 
-	level := logrus.DebugLevel
-	if viper.GetString("app.env") == "production" {
-		var err error
-		level, err = logrus.ParseLevel(viper.GetString("logging.app.level"))
-		if err != nil {
-			panic(err)
-		}
+	level, err := logrus.ParseLevel(viper.GetString("logging.app.level"))
+	if err != nil {
+		panic(err)
 	}
 	App.SetLevel(level)
 }
