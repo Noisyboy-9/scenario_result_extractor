@@ -2,10 +2,10 @@ package service
 
 import (
 	"fmt"
-	"net/http"
 
 	"github.com/labstack/echo/v4"
 	"github.com/noisyboy-9/golang_api_template/internal/config"
+	"github.com/noisyboy-9/golang_api_template/internal/handler"
 	"github.com/noisyboy-9/golang_api_template/internal/log"
 )
 
@@ -29,7 +29,5 @@ func InitHttpServer() {
 }
 
 func (server *httpServer) registerRoutes() {
-	HttpServer.e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "hello world")
-	})
+	HttpServer.e.GET("/", handler.SayHello)
 }
