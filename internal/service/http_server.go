@@ -1,6 +1,7 @@
 package service
 
 import (
+	"context"
 	"fmt"
 
 	"github.com/labstack/echo/v4"
@@ -38,4 +39,8 @@ func (server *httpServer) registerRoutes() {
 
 func (server *httpServer) setupMiddlewares() {
 	HttpServer.e.Use(middleware.Logger())
+}
+
+func TerminateHttpServer(ctx context.Context) {
+	HttpServer.e.Shutdown(ctx)
 }
