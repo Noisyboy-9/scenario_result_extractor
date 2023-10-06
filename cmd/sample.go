@@ -1,8 +1,7 @@
 package cmd
 
 import (
-	"fmt"
-
+	"github.com/noisyboy-9/golang_api_template/internal/app"
 	"github.com/spf13/cobra"
 )
 
@@ -26,5 +25,7 @@ func init() {
 	// sampleCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
 func runSampleCmd(cmd *cobra.Command, args []string) {
-	fmt.Println("sample called")
+	app.InitApp()
+	// main logic goes here
+	app.SetupGracefulShutdown()
 }
