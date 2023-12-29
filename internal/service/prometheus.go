@@ -10,13 +10,15 @@ import (
 
 type prometheus struct {
 	Client api.Client
-	api    v1.API
+	Api    v1.API
 }
 
 var Promtheus *prometheus
 
 func InitPrometheus() {
-	Promtheus := new(prometheus)
+	log.App.Info("init connection to prometheus . . .")
+
+	Promtheus = new(prometheus)
 
 	client, err := api.NewClient(api.Config{
 		Address:      config.Prometheus.Address,
@@ -28,5 +30,5 @@ func InitPrometheus() {
 	}
 
 	Promtheus.Client = client
-	Promtheus.api = v1.NewAPI(client)
+	Promtheus.Api = v1.NewAPI(client)
 }
