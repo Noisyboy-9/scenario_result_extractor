@@ -1,6 +1,6 @@
 package model
 
 type Hpa struct {
-	MetricValue string
+	MetricValue float64
 	Name        string
 }

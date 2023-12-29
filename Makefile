@@ -2,7 +2,5 @@ status:
 	go run main.go status
 
 build: 
-	go build -o ./build/project main.go 
+	go build -o ./build/extractor main.go 
 
-test: 
-	go test ./... -v -gcflags=-l
