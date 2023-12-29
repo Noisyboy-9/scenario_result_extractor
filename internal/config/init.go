@@ -16,8 +16,10 @@ func LoadViper() {
 }
 
 func Init() {
-	HttpServer = new(httpServer)
-	err := viper.UnmarshalKey("httpServer", HttpServer)
+	var err error
+
+	Prometheus = new(prometheus)
+	err = viper.UnmarshalKey("prometheus", Prometheus)
 	if err != nil {
 		log.App.Fatal(err)
 	}
