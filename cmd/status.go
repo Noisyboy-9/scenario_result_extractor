@@ -3,6 +3,7 @@ package cmd
 import (
 	"encoding/json"
 	"fmt"
+	"os"
 	"sort"
 	"time"
 
@@ -53,7 +54,7 @@ func statusRunner(cmd *cobra.Command, args []string) {
 
 	finalReport := make(map[string]Status)
 	for _, timestamp := range timestamps {
-		relativeTimestamp := timestamp.Sub(start)
+		relativeTimestamp := timestamp.Sub(start).Round(time.Second)
 
 		podNodePlacement := podStatus[timestamp]
 		hpaStatus := HPAs[timestamp]
@@ -64,6 +65,11 @@ func statusRunner(cmd *cobra.Command, args []string) {
 		}
 	}
 
-	j, _ := json.MarshalIndent(finalReport, "", "    ")
-	fmt.Println(string(j))
+	indentedJson, err := json.MarshalIndent(finalReport, "", "    ")
+	if err != nil {
+		log.App.WithError(err).Panic("can't marshal final report to json")
+	}
+
+	reportFilePath := fmt.Sprintf("reports/status_%s_%s.json", start.Format("2006-01-02-15:04:05"), end.Format("2006-01-02-15:04:05"))
+	os.WriteFile(reportFilePath, indentedJson, 0644)
 }
