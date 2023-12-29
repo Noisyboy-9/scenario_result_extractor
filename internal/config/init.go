@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 
-	"github.com/noisyboy-9/golang_api_template/internal/log"
+	"github.com/noisyboy-9/data_extractor/internal/log"
 	"github.com/spf13/viper"
 )
 
