@@ -2,8 +2,6 @@ package cmd
 
 import (
 	"encoding/json"
-	"fmt"
-	"os"
 	"sort"
 	"time"
 
@@ -11,6 +9,7 @@ import (
 	"github.com/noisyboy-9/data_extractor/internal/log"
 	"github.com/noisyboy-9/data_extractor/internal/model"
 	"github.com/noisyboy-9/data_extractor/internal/query"
+	"github.com/noisyboy-9/data_extractor/internal/service"
 	"github.com/spf13/cobra"
 )
 
@@ -65,11 +64,12 @@ func statusRunner(cmd *cobra.Command, args []string) {
 		}
 	}
 
-	indentedJson, err := json.MarshalIndent(finalReport, "", "    ")
+	indentedReportJson, err := json.MarshalIndent(finalReport, "", "    ")
 	if err != nil {
 		log.App.WithError(err).Panic("can't marshal final report to json")
 	}
 
-	reportFilePath := fmt.Sprintf("reports/status_%s_%s.json", start.Format("2006-01-02-15:04:05"), end.Format("2006-01-02-15:04:05"))
-	os.WriteFile(reportFilePath, indentedJson, 0644)
+	if err := service.Reporter.SaveReportToFile(indentedReportJson, start, end); err != nil {
+		log.App.WithError(err).Panic("error in saving report")
+	}
 }
