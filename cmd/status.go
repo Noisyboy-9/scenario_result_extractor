@@ -26,12 +26,11 @@ func statusRunner(cmd *cobra.Command, args []string) {
 	end := time.Now()
 	namespace := "kube-schedule"
 
-	log.App.Info("get node list ... ")
-	nodes := query.GetNodeList()
-	log.App.WithField("nodes", nodes).Info("node list fetched")
-
 	log.App.Info("get hpa status ...")
 	hpas := query.GetHpaStatus(start, end, namespace)
 	log.App.WithField("hpas", hpas).Info("hpa status fetched")
 
+	log.App.Info("get pod status ...")
+	podStatus := query.GetPodStatus(start, end, namespace)
+	log.App.WithField("pod_status", podStatus).Info("pod status fetched")
 }
