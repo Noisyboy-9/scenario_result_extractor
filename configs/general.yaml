@@ -10,3 +10,4 @@ prometheus:
   username: "admin"
   password: "promoperator"
   timeout: 10s
+  step: 15s
