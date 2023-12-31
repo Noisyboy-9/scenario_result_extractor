@@ -30,10 +30,20 @@ func init() {
 
 func statusRunner(cmd *cobra.Command, args []string) {
 	app.InitApp()
+	tehranTimezone, err := time.LoadLocation("Asia/Tehran")
+	if err != nil {
+		log.App.WithError(err).Panic("error in getting loading asia/tehran timezone")
+	}
 
-	start := time.Now().Add(-5 * time.Minute)
-	end := time.Now()
-	namespace := "kube-schedule"
+	start, err := time.ParseInLocation("2006-01-02 15:04:05", "2023-12-30 00:21:45", tehranTimezone)
+	if err != nil {
+		log.App.WithError(err).Panic("error in parsing start time")
+	}
+	end, err := time.ParseInLocation("2006-01-02 15:04:05", "2023-12-30 00:43:15", tehranTimezone)
+	if err != nil {
+		log.App.WithError(err).Panic("error in parsing end time")
+	}
+	namespace := "ecmus"
 
 	log.App.Info("get hpa status ...")
 	HPAs := query.GetHpaStatus(start, end, namespace)
@@ -50,7 +60,6 @@ func statusRunner(cmd *cobra.Command, args []string) {
 	sort.Slice(timestamps, func(i, j int) bool {
 		return timestamps[i].Before(timestamps[j])
 	})
-
 	finalReport := make(map[string]Status)
 	for _, timestamp := range timestamps {
 		relativeTimestamp := timestamp.Sub(start).Round(time.Second)
