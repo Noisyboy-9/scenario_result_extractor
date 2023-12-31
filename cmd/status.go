@@ -2,7 +2,6 @@ package cmd
 
 import (
 	"encoding/json"
-	"sort"
 	"time"
 
 	"github.com/noisyboy-9/data_extractor/internal/app"
@@ -25,11 +24,15 @@ func init() {
 	rootCmd.AddCommand(statusCmd)
 }
 
-const REPORT_NAMESPACE = enum.ECMUS_NAMESPACE
+const (
+	REPORT_NAMESPACE = enum.ECMUS_NAMESPACE
+	REPORT_START     = "2023-12-30 00:43:00"
+	REPORT_END       = "2023-12-30 01:04:15"
+)
 
 func statusRunner(cmd *cobra.Command, args []string) {
 	app.InitApp()
-	start, end, err := util.SetReportStartAndEndTime("2023-12-30 00:21:45", "2023-12-30 00:43:15")
+	start, end, err := util.SetReportStartAndEndTime(REPORT_START, REPORT_END)
 	if err != nil {
 		log.App.WithError(err).Panic("error in getting report start and end time")
 	}
@@ -42,16 +45,10 @@ func statusRunner(cmd *cobra.Command, args []string) {
 	podStatus := query.GetPodStatus(start, end, REPORT_NAMESPACE)
 	log.App.WithField("pod_status", podStatus).Info("pod status fetched")
 
-	timestamps := make([]time.Time, 0)
-	for timestamp := range HPAs {
-		timestamps = append(timestamps, timestamp)
-	}
-	sort.Slice(timestamps, func(i, j int) bool {
-		return timestamps[i].Before(timestamps[j])
-	})
+	soretdTimestamps := util.GetSortedTimestamps(HPAs)
 
-	finalReport := make([]model.StatusReport, len(timestamps))
-	for i, timestamp := range timestamps {
+	finalReport := make([]model.StatusReport, len(soretdTimestamps))
+	for i, timestamp := range soretdTimestamps {
 		relativeTimestamp := timestamp.Sub(start).Round(time.Second)
 
 		podNodePlacement := podStatus[timestamp]
@@ -68,7 +65,8 @@ func statusRunner(cmd *cobra.Command, args []string) {
 	if err != nil {
 		log.App.WithError(err).Panic("can't marshal final report to json")
 	}
-	if err := service.Reporter.SaveReportToFile(indentedReportJson, start, end); err != nil {
+
+	if err := service.Reporter.SaveReportToFile(indentedReportJson, start, end, REPORT_NAMESPACE); err != nil {
 		log.App.WithError(err).Panic("error in saving report")
 	}
 }
