@@ -13,11 +13,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-type Status struct {
-	HPAs         []model.Hpa
-	PodPlacement map[string][]string
-}
-
 var statusCmd = &cobra.Command{
 	Use:   "status",
 	Short: "Get status of the system",
@@ -60,14 +55,16 @@ func statusRunner(cmd *cobra.Command, args []string) {
 	sort.Slice(timestamps, func(i, j int) bool {
 		return timestamps[i].Before(timestamps[j])
 	})
-	finalReport := make(map[string]Status)
-	for _, timestamp := range timestamps {
+
+	finalReport := make([]model.StatusReport, len(timestamps))
+	for i, timestamp := range timestamps {
 		relativeTimestamp := timestamp.Sub(start).Round(time.Second)
 
 		podNodePlacement := podStatus[timestamp]
 		hpaStatus := HPAs[timestamp]
 
-		finalReport[relativeTimestamp.String()] = Status{
+		finalReport[i] = model.StatusReport{
+			Timestamp:    relativeTimestamp.String(),
 			HPAs:         hpaStatus,
 			PodPlacement: podNodePlacement,
 		}
@@ -77,7 +74,6 @@ func statusRunner(cmd *cobra.Command, args []string) {
 	if err != nil {
 		log.App.WithError(err).Panic("can't marshal final report to json")
 	}
-
 	if err := service.Reporter.SaveReportToFile(indentedReportJson, start, end); err != nil {
 		log.App.WithError(err).Panic("error in saving report")
 	}
