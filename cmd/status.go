@@ -6,10 +6,12 @@ import (
 	"time"
 
 	"github.com/noisyboy-9/data_extractor/internal/app"
+	"github.com/noisyboy-9/data_extractor/internal/enum"
 	"github.com/noisyboy-9/data_extractor/internal/log"
 	"github.com/noisyboy-9/data_extractor/internal/model"
 	"github.com/noisyboy-9/data_extractor/internal/query"
 	"github.com/noisyboy-9/data_extractor/internal/service"
+	"github.com/noisyboy-9/data_extractor/internal/util"
 	"github.com/spf13/cobra"
 )
 
@@ -23,29 +25,21 @@ func init() {
 	rootCmd.AddCommand(statusCmd)
 }
 
+const REPORT_NAMESPACE = enum.ECMUS_NAMESPACE
+
 func statusRunner(cmd *cobra.Command, args []string) {
 	app.InitApp()
-	tehranTimezone, err := time.LoadLocation("Asia/Tehran")
+	start, end, err := util.SetReportStartAndEndTime("2023-12-30 00:21:45", "2023-12-30 00:43:15")
 	if err != nil {
-		log.App.WithError(err).Panic("error in getting loading asia/tehran timezone")
+		log.App.WithError(err).Panic("error in getting report start and end time")
 	}
-
-	start, err := time.ParseInLocation("2006-01-02 15:04:05", "2023-12-30 00:21:45", tehranTimezone)
-	if err != nil {
-		log.App.WithError(err).Panic("error in parsing start time")
-	}
-	end, err := time.ParseInLocation("2006-01-02 15:04:05", "2023-12-30 00:43:15", tehranTimezone)
-	if err != nil {
-		log.App.WithError(err).Panic("error in parsing end time")
-	}
-	namespace := "ecmus"
 
 	log.App.Info("get hpa status ...")
-	HPAs := query.GetHpaStatus(start, end, namespace)
+	HPAs := query.GetHpaStatus(start, end, REPORT_NAMESPACE)
 	log.App.WithField("hpas", HPAs).Info("hpa status fetched")
 
 	log.App.Info("get pod status ...")
-	podStatus := query.GetPodStatus(start, end, namespace)
+	podStatus := query.GetPodStatus(start, end, REPORT_NAMESPACE)
 	log.App.WithField("pod_status", podStatus).Info("pod status fetched")
 
 	timestamps := make([]time.Time, 0)
