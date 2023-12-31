@@ -1,5 +1,5 @@
 package model
 
 type Pod struct {
-	Name string
+	Name string `json:"name,omitempty" default:"name"`
 }

@@ -1,5 +1,5 @@
 package model
 
 type Node struct {
-	Name string
+	Name string `json:"name,omitempty" default:"name"`
 }
