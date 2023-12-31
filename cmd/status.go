@@ -25,9 +25,9 @@ func init() {
 }
 
 const (
-	REPORT_NAMESPACE = enum.ECMUS_NAMESPACE
-	REPORT_START     = "2023-12-30 01:10:30"
-	REPORT_END       = "2023-12-30 01:32:30"
+	REPORT_NAMESPACE = enum.KUBESCHEDULE_NAMESPACE
+	REPORT_START     = "2023-12-29 17:56:00"
+	REPORT_END       = "2023-12-29 18:17:15"
 )
 
 func statusRunner(cmd *cobra.Command, args []string) {
