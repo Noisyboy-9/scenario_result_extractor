@@ -26,8 +26,8 @@ func init() {
 
 const (
 	REPORT_NAMESPACE = enum.ECMUS_NAMESPACE
-	REPORT_START     = "2023-12-30 00:43:00"
-	REPORT_END       = "2023-12-30 01:04:15"
+	REPORT_START     = "2023-12-30 01:10:30"
+	REPORT_END       = "2023-12-30 01:32:30"
 )
 
 func statusRunner(cmd *cobra.Command, args []string) {
