@@ -1,0 +1,43 @@
+{
+    "created_but_not_ready_pods": [
+        "a-deployment-64787475c5-6g9sm",
+        "a-deployment-64787475c5-vgsdf",
+        "b-deployment-8fb4d4fcd-v7xgj"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-64787475c5-7vd2x": "1.71443929s",
+        "a-deployment-64787475c5-bn6bw": "1.714439378s",
+        "a-deployment-64787475c5-brx8d": "1.71443914s",
+        "a-deployment-64787475c5-bwxfj": "1.714439544s",
+        "a-deployment-64787475c5-gsz4x": "1.714440295s",
+        "a-deployment-64787475c5-k2wh4": "1.7144393180000002s",
+        "a-deployment-64787475c5-k9t5k": "1.714439303s",
+        "a-deployment-64787475c5-kvcx7": "1.714439424s",
+        "a-deployment-64787475c5-szqqw": "1.71444034s",
+        "a-deployment-64787475c5-zvsxt": "1.714439378s",
+        "b-deployment-8fb4d4fcd-9sp82": "1.714439665s",
+        "b-deployment-8fb4d4fcd-ds7kc": "1.714439333s",
+        "b-deployment-8fb4d4fcd-dvzgm": "1.714439635s",
+        "b-deployment-8fb4d4fcd-hpg2v": "1.714439799s",
+        "b-deployment-8fb4d4fcd-kc7jl": "1.71443914s",
+        "b-deployment-8fb4d4fcd-wtx8w": "1.714439665s",
+        "b-deployment-8fb4d4fcd-xfhnj": "1.714440341s",
+        "b-deployment-8fb4d4fcd-xq7rz": "1.71443929s",
+        "c-deployment-6c6ffb986f-6t4bs": "1.7144393180000002s",
+        "c-deployment-6c6ffb986f-822k6": "1.714440342s",
+        "c-deployment-6c6ffb986f-8tfgc": "1.714440325s",
+        "c-deployment-6c6ffb986f-fmx24": "1.714439288s",
+        "c-deployment-6c6ffb986f-lv8zw": "1.71443914s",
+        "c-deployment-6c6ffb986f-mx5cs": "1.71444007s",
+        "c-deployment-6c6ffb986f-ql7g2": "1.714440325s",
+        "c-deployment-6c6ffb986f-qsn5n": "1.71443992s",
+        "c-deployment-6c6ffb986f-x2rl7": "1.7144399049999999s",
+        "c-deployment-6c6ffb986f-z9p64": "1.7144393180000002s",
+        "c-deployment-6c6ffb986f-zgxv5": "1.714439965s",
+        "d-deployment-79b75c6f58-7l2jt": "1.71443914s",
+        "d-deployment-79b75c6f58-jdp2k": "1.71444019s",
+        "d-deployment-79b75c6f58-jm8kk": "1.714440175s",
+        "d-deployment-79b75c6f58-wjv8w": "1.714440204s",
+        "ecmus-no-qos-scheduler-664bc5fc7b-gv9mh": "1.714439138s"
+    }
+}

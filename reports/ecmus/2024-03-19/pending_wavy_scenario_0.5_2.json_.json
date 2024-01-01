@@ -1,0 +1,42 @@
+{
+    "created_but_not_ready_pods": [
+        "a-deployment-7989fcfbfd-7k6fq",
+        "a-deployment-7989fcfbfd-b6tdl",
+        "a-deployment-7989fcfbfd-qgnpg",
+        "a-deployment-7989fcfbfd-rt2dv",
+        "a-deployment-7989fcfbfd-rt62d",
+        "a-deployment-7989fcfbfd-sxl8v",
+        "a-deployment-7989fcfbfd-t6sjw",
+        "a-deployment-7989fcfbfd-vgf65",
+        "a-deployment-7989fcfbfd-x2mr5"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-7989fcfbfd-278p9": "1.7107727430000002s",
+        "a-deployment-7989fcfbfd-4ldbc": "1.710772459s",
+        "a-deployment-7989fcfbfd-4w4q6": "1.710772758s",
+        "a-deployment-7989fcfbfd-7g728": "1.710772773s",
+        "a-deployment-7989fcfbfd-8pl2n": "1.710772647s",
+        "a-deployment-7989fcfbfd-ddk5t": "1.710770971s",
+        "a-deployment-7989fcfbfd-gzrd2": "1.710772548s",
+        "a-deployment-7989fcfbfd-j6xbk": "1.7107724979999999s",
+        "a-deployment-7989fcfbfd-jbxm2": "1.710772459s",
+        "a-deployment-7989fcfbfd-k8c9h": "1.710772488s",
+        "a-deployment-7989fcfbfd-pr2wm": "1.7107723830000001s",
+        "a-deployment-7989fcfbfd-rb4zj": "1.7107726699999999s",
+        "a-deployment-7989fcfbfd-t6pnd": "1.7107725280000001s",
+        "a-deployment-7989fcfbfd-tlfxj": "1.710772548s",
+        "a-deployment-7989fcfbfd-xh29n": "1.7107726699999999s",
+        "b-deployment-68f688df8c-4rrf9": "1.710773074s",
+        "b-deployment-68f688df8c-6c7kn": "1.710772985s",
+        "b-deployment-68f688df8c-7227x": "1.710773044s",
+        "b-deployment-68f688df8c-fwtqg": "1.710768162s",
+        "b-deployment-68f688df8c-kps7d": "1.710772985s",
+        "b-deployment-68f688df8c-kxdt4": "1.710773119s",
+        "b-deployment-68f688df8c-rd28r": "1.710773299s",
+        "b-deployment-68f688df8c-zl579": "1.710773104s",
+        "c-deployment-7954dd5668-6tbl2": "1.7107717359999999s",
+        "c-deployment-7954dd5668-bp7w6": "1.7107723830000001s",
+        "d-deployment-7b4776f58c-69862": "1.710770519s",
+        "ecmus-scheduler-6876f9d49b-lstbw": "1.7107720400000002s"
+    }
+}

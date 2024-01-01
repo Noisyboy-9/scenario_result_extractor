@@ -1,0 +1,41 @@
+{
+    "created_but_not_ready_pods": [
+        "a-deployment-7989fcfbfd-rb966",
+        "c-deployment-7954dd5668-5hnpc",
+        "c-deployment-7954dd5668-b257w",
+        "c-deployment-7954dd5668-cz68f",
+        "c-deployment-7954dd5668-fmgrd",
+        "c-deployment-7954dd5668-lqp55",
+        "c-deployment-7954dd5668-rhn8v",
+        "c-deployment-7954dd5668-wngqw"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-7989fcfbfd-4jfnn": "1.710773878s",
+        "a-deployment-7989fcfbfd-55hvm": "1.710774095s",
+        "a-deployment-7989fcfbfd-c7nb2": "1.710774007s",
+        "a-deployment-7989fcfbfd-ghtrn": "1.710773765s",
+        "a-deployment-7989fcfbfd-pb9zg": "1.710773908s",
+        "a-deployment-7989fcfbfd-prjd5": "1.7107740059999998s",
+        "a-deployment-7989fcfbfd-qn4cb": "1.7107738700000001s",
+        "a-deployment-7989fcfbfd-rb4zj": "1.7107726699999999s",
+        "a-deployment-7989fcfbfd-sz6l2": "1.7107738700000001s",
+        "a-deployment-7989fcfbfd-wx89c": "1.7107738399999999s",
+        "a-deployment-7989fcfbfd-z86lj": "1.7107738399999999s",
+        "b-deployment-68f688df8c-5rgfq": "1.710774186s",
+        "b-deployment-68f688df8c-c8kpx": "1.710774201s",
+        "b-deployment-68f688df8c-d7tlg": "1.7107742460000002s",
+        "b-deployment-68f688df8c-fwtqg": "1.710768162s",
+        "b-deployment-68f688df8c-rp9w8": "1.710774291s",
+        "c-deployment-7954dd5668-6tbl2": "1.7107717359999999s",
+        "c-deployment-7954dd5668-bmzxl": "1.710773765s",
+        "c-deployment-7954dd5668-dvpcw": "1.710774697s",
+        "c-deployment-7954dd5668-fxt8l": "1.7107745460000001s",
+        "c-deployment-7954dd5668-grq6h": "1.710774697s",
+        "c-deployment-7954dd5668-lscd8": "1.710773944s",
+        "c-deployment-7954dd5668-r28m4": "1.7107745909999998s",
+        "c-deployment-7954dd5668-vbsbp": "1.7107740059999998s",
+        "c-deployment-7954dd5668-zrjjs": "1.710774653s",
+        "d-deployment-7b4776f58c-69862": "1.710770519s",
+        "ecmus-scheduler-7b49bdd954-f2r8p": "1.710773424s"
+    }
+}

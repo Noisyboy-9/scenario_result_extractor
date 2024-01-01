@@ -1,0 +1,41 @@
+{
+    "created_but_not_ready_pods": [
+        "a-deployment-85f9bc8f6-47t2q",
+        "a-deployment-85f9bc8f6-r24pc",
+        "b-deployment-84c686757c-2vmbr",
+        "b-deployment-84c686757c-728hl",
+        "b-deployment-84c686757c-fschg",
+        "c-deployment-776df9fd98-7tkll",
+        "d-deployment-7b54cdc4c7-bd2gl"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-85f9bc8f6-48sd5": "1.7153234579999999s",
+        "a-deployment-85f9bc8f6-b4s95": "1.715324719s",
+        "a-deployment-85f9bc8f6-d7rgz": "1.715323593s",
+        "a-deployment-85f9bc8f6-rsxms": "1.715323593s",
+        "a-deployment-85f9bc8f6-slr5z": "1.715324809s",
+        "a-deployment-85f9bc8f6-vxvz6": "1.715324704s",
+        "a-deployment-85f9bc8f6-x5fck": "1.715324734s",
+        "b-deployment-84c686757c-6hzz5": "1.7153235919999998s",
+        "b-deployment-84c686757c-82bcp": "1.715324448s",
+        "b-deployment-84c686757c-8qfq4": "1.7153234579999999s",
+        "b-deployment-84c686757c-bxhfx": "1.715324448s",
+        "b-deployment-84c686757c-ffnh9": "1.7153246439999998s",
+        "b-deployment-84c686757c-h4p97": "1.715324629s",
+        "b-deployment-84c686757c-rcc28": "1.715324362s",
+        "b-deployment-84c686757c-wqthh": "1.715324362s",
+        "c-deployment-776df9fd98-56frs": "1.7153244490000001s",
+        "c-deployment-776df9fd98-66xm5": "1.715323593s",
+        "c-deployment-776df9fd98-7bcv7": "1.715324359s",
+        "c-deployment-776df9fd98-8g79p": "1.715324359s",
+        "c-deployment-776df9fd98-l5l8l": "1.715324448s",
+        "c-deployment-776df9fd98-lgrmf": "1.7153246439999998s",
+        "c-deployment-776df9fd98-schw4": "1.7153234579999999s",
+        "c-deployment-776df9fd98-v74rt": "1.715324659s",
+        "c-deployment-776df9fd98-xfc5w": "1.7153235919999998s",
+        "custom-scheduler-77dbcd9f69-wp47r": "1.715324554s",
+        "d-deployment-7b54cdc4c7-9xlbd": "1.7153244490000001s",
+        "d-deployment-7b54cdc4c7-j5dz2": "1.715324614s",
+        "d-deployment-7b54cdc4c7-rfmpk": "1.7153234579999999s"
+    }
+}

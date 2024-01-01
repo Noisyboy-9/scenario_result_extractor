@@ -1,0 +1,33 @@
+{
+    "created_but_not_ready_pods": [
+        "a-deployment-9498f9945-4plkd",
+        "a-deployment-9498f9945-4q9cd",
+        "a-deployment-9498f9945-942vx",
+        "b-deployment-7d6c59b6b6-6pd8r",
+        "b-deployment-7d6c59b6b6-ck2ql",
+        "c-deployment-654df7b88c-j46dn",
+        "c-deployment-654df7b88c-zfc99",
+        "d-deployment-578cc9bb58-dcjbp"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-9498f9945-9dkv9": "1.715359994s",
+        "a-deployment-9498f9945-c6c44": "1.7153588229999999s",
+        "a-deployment-9498f9945-d8knx": "1.7153589569999999s",
+        "a-deployment-9498f9945-kzp7f": "1.7153589569999999s",
+        "a-deployment-9498f9945-nl69d": "1.715359888s",
+        "b-deployment-7d6c59b6b6-44xj5": "1.7153588229999999s",
+        "b-deployment-7d6c59b6b6-9vkkj": "1.715359979s",
+        "b-deployment-7d6c59b6b6-t4l74": "1.715359874s",
+        "b-deployment-7d6c59b6b6-wck9d": "1.7153589569999999s",
+        "c-deployment-654df7b88c-4xtpg": "1.7153588229999999s",
+        "c-deployment-654df7b88c-hc85n": "1.7153598890000001s",
+        "c-deployment-654df7b88c-nxtz4": "1.7153597999999999s",
+        "c-deployment-654df7b88c-pt4vm": "1.7153589569999999s",
+        "c-deployment-654df7b88c-txdxr": "1.715359801s",
+        "c-deployment-654df7b88c-z9z7c": "1.7153589569999999s",
+        "custom-scheduler-77dbcd9f69-mzjzj": "1.715360037s",
+        "d-deployment-578cc9bb58-msfmz": "1.715359904s",
+        "d-deployment-578cc9bb58-rpr6m": "1.7153597999999999s",
+        "d-deployment-578cc9bb58-zgbxd": "1.7153588229999999s"
+    }
+}

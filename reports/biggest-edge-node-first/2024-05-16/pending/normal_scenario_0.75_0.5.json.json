@@ -1,0 +1,43 @@
+{
+    "created_but_not_ready_pods": [
+        "a-deployment-85f9bc8f6-6zlst",
+        "a-deployment-85f9bc8f6-hl8g4",
+        "a-deployment-85f9bc8f6-s65z2",
+        "b-deployment-84c686757c-cx4tt",
+        "c-deployment-776df9fd98-m72q2"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-85f9bc8f6-8qhcj": "1.715315637s",
+        "a-deployment-85f9bc8f6-9ng7p": "1.7153157719999998s",
+        "a-deployment-85f9bc8f6-b8tj9": "1.715316598s",
+        "a-deployment-85f9bc8f6-bmtb6": "1.715316478s",
+        "a-deployment-85f9bc8f6-fmgv4": "1.7153157719999998s",
+        "a-deployment-85f9bc8f6-jdwzj": "1.715316568s",
+        "a-deployment-85f9bc8f6-lfqtl": "1.7153162979999999s",
+        "a-deployment-85f9bc8f6-lnl7x": "1.715316583s",
+        "a-deployment-85f9bc8f6-zw4vn": "1.7153163280000001s",
+        "b-deployment-84c686757c-bqkfq": "1.715316583s",
+        "b-deployment-84c686757c-dmzxz": "1.7153167630000001s",
+        "b-deployment-84c686757c-ds6qd": "1.715316673s",
+        "b-deployment-84c686757c-hww5n": "1.715316493s",
+        "b-deployment-84c686757c-qxjq4": "1.715316222s",
+        "b-deployment-84c686757c-thz2b": "1.715315637s",
+        "b-deployment-84c686757c-tpj95": "1.715315982s",
+        "b-deployment-84c686757c-tqfsc": "1.715315787s",
+        "b-deployment-84c686757c-v2m6z": "1.715315982s",
+        "b-deployment-84c686757c-w57cv": "1.715315951s",
+        "b-deployment-84c686757c-xxrl7": "1.715316238s",
+        "c-deployment-776df9fd98-262w6": "1.715316388s",
+        "c-deployment-776df9fd98-6jgp4": "1.715316117s",
+        "c-deployment-776df9fd98-cq475": "1.715316794s",
+        "c-deployment-776df9fd98-ftfhq": "1.715315637s",
+        "c-deployment-776df9fd98-ltnn5": "1.715316435s",
+        "c-deployment-776df9fd98-n6cnp": "1.715316163s",
+        "c-deployment-776df9fd98-t569b": "1.715316118s",
+        "c-deployment-776df9fd98-tnvqx": "1.7153167630000001s",
+        "c-deployment-776df9fd98-zkc82": "1.7153167489999999s",
+        "c-deployment-776df9fd98-zwgtp": "1.715316435s",
+        "custom-scheduler-77dbcd9f69-z4zjz": "1.7153168829999998s",
+        "d-deployment-7b54cdc4c7-gb4bt": "1.715315637s"
+    }
+}

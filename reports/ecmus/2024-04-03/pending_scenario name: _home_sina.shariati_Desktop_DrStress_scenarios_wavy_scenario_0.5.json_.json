@@ -1,0 +1,43 @@
+{
+    "created_but_not_ready_pods": [
+        "a-deployment-79b8b6d97c-2gcn8",
+        "a-deployment-79b8b6d97c-bq99f",
+        "a-deployment-79b8b6d97c-c5h6z",
+        "a-deployment-79b8b6d97c-lcf8g",
+        "a-deployment-79b8b6d97c-lqwnz",
+        "a-deployment-79b8b6d97c-nbdzn",
+        "c-deployment-58545f9d59-fpssn",
+        "c-deployment-58545f9d59-j5xwv",
+        "c-deployment-58545f9d59-jc7w4",
+        "c-deployment-58545f9d59-w9qkk"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-79b8b6d97c-2kb76": "1.7121149230000001s",
+        "a-deployment-79b8b6d97c-4kr4c": "1.712114863s",
+        "a-deployment-79b8b6d97c-67qt8": "1.712114953s",
+        "a-deployment-79b8b6d97c-8zqn7": "1.712115571s",
+        "a-deployment-79b8b6d97c-btq4d": "1.712115034s",
+        "a-deployment-79b8b6d97c-gkkhp": "1.712115856s",
+        "a-deployment-79b8b6d97c-mwgp8": "1.712115133s",
+        "a-deployment-79b8b6d97c-pnr7h": "1.712114699s",
+        "a-deployment-79b8b6d97c-sc8hq": "1.712115047s",
+        "b-deployment-96944b6fd-5rs27": "1.712114699s",
+        "b-deployment-96944b6fd-ddqsl": "1.7121152990000001s",
+        "b-deployment-96944b6fd-dk7rx": "1.712115192s",
+        "b-deployment-96944b6fd-dk8t6": "1.712115237s",
+        "b-deployment-96944b6fd-ms4x5": "1.712115222s",
+        "c-deployment-58545f9d59-cpmq2": "1.712115464s",
+        "c-deployment-58545f9d59-kgx2w": "1.712115571s",
+        "c-deployment-58545f9d59-ns8hv": "1.712115479s",
+        "c-deployment-58545f9d59-pbqsc": "1.712114863s",
+        "c-deployment-58545f9d59-vdz5w": "1.712115524s",
+        "c-deployment-58545f9d59-wpkgc": "1.712114699s",
+        "c-deployment-58545f9d59-wrkqx": "1.712115042s",
+        "d-deployment-5dc9c9b78b-jhlx7": "1.712115733s",
+        "d-deployment-5dc9c9b78b-mrpm9": "1.712115763s",
+        "d-deployment-5dc9c9b78b-qpbdk": "1.712115778s",
+        "d-deployment-5dc9c9b78b-rj9x9": "1.712114699s",
+        "d-deployment-5dc9c9b78b-w9d4j": "1.712115856s",
+        "ecmus-scheduler-8494f8db8-qwpqz": "1.712114697s"
+    }
+}

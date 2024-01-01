@@ -1,0 +1,43 @@
+{
+    "created_but_not_ready_pods": [
+        "a-deployment-79b8b6d97c-ktwcx",
+        "c-deployment-58545f9d59-zgbff"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-79b8b6d97c-2pgt7": "1.712359795s",
+        "a-deployment-79b8b6d97c-8x4gh": "1.7123589369999999s",
+        "a-deployment-79b8b6d97c-chp5m": "1.712359042s",
+        "a-deployment-79b8b6d97c-j2bft": "1.7123587740000001s",
+        "a-deployment-79b8b6d97c-lkj8w": "1.7123590119999998s",
+        "a-deployment-79b8b6d97c-mh89g": "1.7123590119999998s",
+        "a-deployment-79b8b6d97c-njfkv": "1.7123589529999999s",
+        "a-deployment-79b8b6d97c-q5gr9": "1.712358922s",
+        "a-deployment-79b8b6d97c-sl8xw": "1.712359102s",
+        "a-deployment-79b8b6d97c-t8z4b": "1.712359102s",
+        "b-deployment-96944b6fd-2vlmv": "1.7123589529999999s",
+        "b-deployment-96944b6fd-585fv": "1.712359823s",
+        "b-deployment-96944b6fd-75x5t": "1.712359643s",
+        "b-deployment-96944b6fd-7zbmt": "1.712359569s",
+        "b-deployment-96944b6fd-8ztm9": "1.712359884s",
+        "b-deployment-96944b6fd-b8xkm": "1.7123589529999999s",
+        "b-deployment-96944b6fd-czd7g": "1.712358922s",
+        "b-deployment-96944b6fd-fmzlk": "1.7123587740000001s",
+        "b-deployment-96944b6fd-g48pw": "1.712359643s",
+        "b-deployment-96944b6fd-h4cwv": "1.712359823s",
+        "b-deployment-96944b6fd-qdgd2": "1.712359809s",
+        "b-deployment-96944b6fd-s4vfc": "1.712359584s",
+        "b-deployment-96944b6fd-tzdnj": "1.712359539s",
+        "b-deployment-96944b6fd-vgg9s": "1.712359808s",
+        "c-deployment-58545f9d59-25ssz": "1.712359974s",
+        "c-deployment-58545f9d59-2dqsq": "1.7123589529999999s",
+        "c-deployment-58545f9d59-48l2k": "1.7123587740000001s",
+        "c-deployment-58545f9d59-c4mm2": "1.712359915s",
+        "c-deployment-58545f9d59-g62b9": "1.7123597940000002s",
+        "c-deployment-58545f9d59-kjcv8": "1.712359765s",
+        "c-deployment-58545f9d59-lcmnj": "1.712358922s",
+        "c-deployment-58545f9d59-s49fj": "1.71235984s",
+        "c-deployment-58545f9d59-wnlw6": "1.7123589529999999s",
+        "d-deployment-5dc9c9b78b-m8g4g": "1.712358773s",
+        "ecmus-scheduler-8494f8db8-p8rpc": "1.712358772s"
+    }
+}

@@ -5,7 +5,6 @@ import (
 	"time"
 
 	"github.com/noisyboy-9/data_extractor/internal/app"
-	"github.com/noisyboy-9/data_extractor/internal/enum"
 	"github.com/noisyboy-9/data_extractor/internal/log"
 	"github.com/noisyboy-9/data_extractor/internal/model"
 	"github.com/noisyboy-9/data_extractor/internal/query"
@@ -24,31 +23,25 @@ func init() {
 	rootCmd.AddCommand(statusCmd)
 }
 
-const (
-	REPORT_NAMESPACE = enum.KUBESCHEDULE_NAMESPACE
-	REPORT_START     = "2023-12-29 17:56:00"
-	REPORT_END       = "2023-12-29 18:17:15"
-)
-
-func statusRunner(cmd *cobra.Command, args []string) {
+func statusRunner(*cobra.Command, []string) {
 	app.InitApp()
-	start, end, err := util.SetReportStartAndEndTime(REPORT_START, REPORT_END)
+	start, end, err := util.SetReportStartAndEndTime(ReportStart, ReportEnd)
 	if err != nil {
 		log.App.WithError(err).Panic("error in getting report start and end time")
 	}
 
 	log.App.Info("get hpa status ...")
-	HPAs := query.GetHpaStatus(start, end, REPORT_NAMESPACE)
-	log.App.WithField("hpas", HPAs).Info("hpa status fetched")
+	HPAs := query.GetHpaStatus(start, end, ReportNamespace)
+	//log.App.WithField("hpas", HPAs).Info("hpa status fetched")
 
 	log.App.Info("get pod status ...")
-	podStatus := query.GetPodStatus(start, end, REPORT_NAMESPACE)
-	log.App.WithField("pod_status", podStatus).Info("pod status fetched")
+	podStatus := query.GetPodStatus(start, end, ReportNamespace)
+	//log.App.WithField("pod_status", podStatus).Info("pod status fetched")
 
-	soretdTimestamps := util.GetSortedTimestamps(HPAs)
+	sortedTimestamps := util.GetSortedTimestamps(HPAs)
 
-	finalReport := make([]model.StatusReport, len(soretdTimestamps))
-	for i, timestamp := range soretdTimestamps {
+	finalReport := make([]model.StatusReport, len(sortedTimestamps))
+	for i, timestamp := range sortedTimestamps {
 		relativeTimestamp := timestamp.Sub(start).Round(time.Second)
 
 		podNodePlacement := podStatus[timestamp]
@@ -66,7 +59,7 @@ func statusRunner(cmd *cobra.Command, args []string) {
 		log.App.WithError(err).Panic("can't marshal final report to json")
 	}
 
-	if err := service.Reporter.SaveReportToFile(indentedReportJson, start, end, REPORT_NAMESPACE); err != nil {
+	if err := service.Reporter.SaveReportToFile(indentedReportJson, ReportScenarioName, ReportNamespace, "status"); err != nil {
 		log.App.WithError(err).Panic("error in saving report")
 	}
 }

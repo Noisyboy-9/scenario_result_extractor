@@ -18,24 +18,24 @@ func InitReporter() {
 	Reporter.reportFolderPath = "reports"
 }
 
-func (reporter *reporter) SaveReportToFile(report []byte, start time.Time, end time.Time, namespace string) error {
+func (reporter *reporter) SaveReportToFile(report []byte, scenarioName string, namespace string, reportType string) error {
 	reportTimestamp := time.Now().Format("2006-01-02")
-	if err := reporter.ensureDirectory(namespace, reportTimestamp); err != nil {
+	if err := reporter.ensureDirectory(namespace, reportTimestamp, reportType); err != nil {
 		return err
 	}
 
 	reportSavingPath := fmt.Sprintf(
-		"reports/%s/%s/status_%s_%s.json",
+		"reports/%s/%s/%s/%s.json",
 		namespace,
 		reportTimestamp,
-		start.Format("2006-01-02-15:04:05"),
-		end.Format("2006-01-02-15:04:05"),
+		reportType,
+		scenarioName,
 	)
 
 	return os.WriteFile(reportSavingPath, report, 0644)
 }
 
-func (reporter *reporter) ensureDirectory(namespace string, path string) error {
-	reportPath := filepath.Join(reporter.reportFolderPath, namespace, path)
+func (reporter *reporter) ensureDirectory(namespace string, path string, reportType string) error {
+	reportPath := filepath.Join(reporter.reportFolderPath, namespace, path, reportType)
 	return os.MkdirAll(reportPath, os.ModePerm)
 }

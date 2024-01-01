@@ -1,0 +1,43 @@
+{
+    "created_but_not_ready_pods": [
+        "a-deployment-5c45df8f6c-drx4p",
+        "a-deployment-5c45df8f6c-flj9v",
+        "a-deployment-5c45df8f6c-ggcbv",
+        "a-deployment-5c45df8f6c-grb2w",
+        "a-deployment-5c45df8f6c-shnhw",
+        "c-deployment-6b59d746bf-vpkzj"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-5c45df8f6c-29kph": "1.7153915739999999s",
+        "a-deployment-5c45df8f6c-2ftn9": "1.715391935s",
+        "a-deployment-5c45df8f6c-52tjw": "1.715391859s",
+        "a-deployment-5c45df8f6c-8xbxq": "1.715391829s",
+        "a-deployment-5c45df8f6c-9l4hc": "1.7153915739999999s",
+        "a-deployment-5c45df8f6c-sfkdn": "1.715390899s",
+        "a-deployment-5c45df8f6c-svkn6": "1.715391033s",
+        "a-deployment-5c45df8f6c-vzgb2": "1.7153919370000001s",
+        "a-deployment-5c45df8f6c-xxn7n": "1.7153910479999999s",
+        "b-deployment-6ff9fdbb58-5hmgq": "1.715391859s",
+        "b-deployment-6ff9fdbb58-b5jjw": "1.715391755s",
+        "b-deployment-6ff9fdbb58-g6zhh": "1.715391829s",
+        "b-deployment-6ff9fdbb58-gr8ks": "1.715391575s",
+        "b-deployment-6ff9fdbb58-jtlcx": "1.715390899s",
+        "b-deployment-6ff9fdbb58-kj4d9": "1.71539201s",
+        "b-deployment-6ff9fdbb58-srdlv": "1.7153916489999999s",
+        "b-deployment-6ff9fdbb58-t2znc": "1.715391049s",
+        "c-deployment-6b59d746bf-2l4bc": "1.7153920249999999s",
+        "c-deployment-6b59d746bf-2m7q4": "1.715391769s",
+        "c-deployment-6b59d746bf-crljb": "1.715391514s",
+        "c-deployment-6b59d746bf-d85jk": "1.7153915149999999s",
+        "c-deployment-6b59d746bf-dwq97": "1.71539204s",
+        "c-deployment-6b59d746bf-dx6lr": "1.715390899s",
+        "c-deployment-6b59d746bf-f2bh9": "1.715391739s",
+        "c-deployment-6b59d746bf-mcv2b": "1.71539201s",
+        "c-deployment-6b59d746bf-mstr2": "1.715391514s",
+        "c-deployment-6b59d746bf-s9hj9": "1.7153910479999999s",
+        "c-deployment-6b59d746bf-z4ps2": "1.7153915149999999s",
+        "custom-scheduler-77dbcd9f69-nj9cv": "1.715391694s",
+        "d-deployment-57dccb66b6-g9m7n": "1.715390899s",
+        "d-deployment-57dccb66b6-zn5xd": "1.7153915149999999s"
+    }
+}

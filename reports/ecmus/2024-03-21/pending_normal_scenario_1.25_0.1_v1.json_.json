@@ -1,0 +1,43 @@
+{
+    "created_but_not_ready_pods": [
+        "c-deployment-568986b69f-99t95"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-76ff5bd997-5rnsv": "1.71095147s",
+        "a-deployment-76ff5bd997-7hqtf": "1.710950988s",
+        "a-deployment-76ff5bd997-lm6kc": "1.710950522s",
+        "a-deployment-76ff5bd997-s5twb": "1.710950523s",
+        "a-deployment-76ff5bd997-st7kc": "1.710949862s",
+        "a-deployment-76ff5bd997-svvz5": "1.710950537s",
+        "a-deployment-76ff5bd997-sxxlf": "1.710951334s",
+        "a-deployment-76ff5bd997-w4c24": "1.710950763s",
+        "a-deployment-76ff5bd997-x5rqm": "1.710950597s",
+        "b-deployment-8686f88b48-4n4jp": "1.710950537s",
+        "b-deployment-8686f88b48-694rm": "1.710951529s",
+        "b-deployment-8686f88b48-6fmmk": "1.710939766s",
+        "b-deployment-8686f88b48-hc4ph": "1.7109512580000001s",
+        "b-deployment-8686f88b48-hssfj": "1.710950522s",
+        "b-deployment-8686f88b48-k4257": "1.710950612s",
+        "b-deployment-8686f88b48-lr8h6": "1.710951214s",
+        "b-deployment-8686f88b48-pd2bq": "1.7109513189999999s",
+        "b-deployment-8686f88b48-r486c": "1.710950792s",
+        "b-deployment-8686f88b48-xmnpv": "1.710950974s",
+        "c-deployment-568986b69f-472vq": "1.7109511080000002s",
+        "c-deployment-568986b69f-5kkkj": "1.710950928s",
+        "c-deployment-568986b69f-8h92j": "1.7109497070000002s",
+        "c-deployment-568986b69f-8v7rj": "1.7109512740000001s",
+        "c-deployment-568986b69f-8z5ct": "1.710951003s",
+        "c-deployment-568986b69f-bw4r2": "1.710951034s",
+        "c-deployment-568986b69f-c6wbd": "1.710950523s",
+        "c-deployment-568986b69f-d644z": "1.7109512279999999s",
+        "c-deployment-568986b69f-llv4x": "1.710950928s",
+        "c-deployment-568986b69f-ss6mm": "1.710950507s",
+        "c-deployment-568986b69f-tw9vf": "1.710951003s",
+        "c-deployment-568986b69f-w6vkp": "1.710950552s",
+        "c-deployment-568986b69f-w98kv": "1.710950552s",
+        "d-deployment-5c8b9cd676-4llzm": "1.710951515s",
+        "d-deployment-5c8b9cd676-gnchj": "1.710950597s",
+        "d-deployment-5c8b9cd676-zd7zr": "1.710949665s",
+        "ecmus-scheduler-ffcc68f7d-7x8d6": "1.7109501919999999s"
+    }
+}

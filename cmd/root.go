@@ -1,6 +1,3 @@
-/*
-Copyright © 2023 NAME HERE <EMAIL ADDRESS>
-*/
 package cmd
 
 import (
@@ -11,9 +8,16 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "dextract",
+	Use:   "",
 	Short: "Extract paper's required data from prometheus and do something with it",
 }
+
+var (
+	ReportNamespace    string
+	ReportStart        string
+	ReportEnd          string
+	ReportScenarioName string
+)
 
 func Execute() {
 	err := rootCmd.Execute()
@@ -23,5 +27,8 @@ func Execute() {
 }
 
 func init() {
-	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	rootCmd.PersistentFlags().StringVar(&ReportStart, "start", "", "scenario start time with format 2006-01-02 15:04:05")
+	rootCmd.PersistentFlags().StringVar(&ReportEnd, "end", "", "scenario end time with format 2006-01-02 15:04:05")
+	rootCmd.PersistentFlags().StringVar(&ReportNamespace, "namespace", "", "scenario namespace")
+	rootCmd.PersistentFlags().StringVar(&ReportScenarioName, "name", "", "scenario name")
 }

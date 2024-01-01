@@ -1,0 +1,43 @@
+{
+    "created_but_not_ready_pods": [
+        "a-deployment-6cbd596cc4-ffm55",
+        "a-deployment-6cbd596cc4-mbjsx",
+        "a-deployment-6cbd596cc4-ttdgv"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-6cbd596cc4-299gd": "1.71528097s",
+        "a-deployment-6cbd596cc4-4qnr6": "1.715281134s",
+        "a-deployment-6cbd596cc4-6vhxh": "1.7152814950000002s",
+        "a-deployment-6cbd596cc4-97rbw": "1.7152817649999998s",
+        "a-deployment-6cbd596cc4-9fd6n": "1.715281525s",
+        "a-deployment-6cbd596cc4-blv67": "1.7152810010000001s",
+        "a-deployment-6cbd596cc4-cf4z6": "1.715281676s",
+        "a-deployment-6cbd596cc4-cgksl": "1.7152809690000002s",
+        "a-deployment-6cbd596cc4-qs72f": "1.71528178s",
+        "a-deployment-6cbd596cc4-rft4z": "1.715280838s",
+        "a-deployment-6cbd596cc4-wd9pl": "1.7152810010000001s",
+        "a-deployment-6cbd596cc4-wpz68": "1.715281795s",
+        "b-deployment-6d8c97d549-2rs4t": "1.715280984s",
+        "b-deployment-6d8c97d549-46sqc": "1.715281405s",
+        "b-deployment-6d8c97d549-89sj5": "1.715281857s",
+        "b-deployment-6d8c97d549-djktz": "1.715281676s",
+        "b-deployment-6d8c97d549-g7s5g": "1.715281961s",
+        "b-deployment-6d8c97d549-kkncf": "1.715281165s",
+        "b-deployment-6d8c97d549-lwjwd": "1.715281766s",
+        "b-deployment-6d8c97d549-n567w": "1.715280838s",
+        "b-deployment-6d8c97d549-qlqv8": "1.7152811639999999s",
+        "b-deployment-6d8c97d549-xkvjc": "1.715281435s",
+        "c-deployment-74bf776888-6bjtf": "1.715280838s",
+        "c-deployment-74bf776888-74cpd": "1.71528133s",
+        "c-deployment-74bf776888-8spvd": "1.715281961s",
+        "c-deployment-74bf776888-ckf99": "1.7152816290000001s",
+        "c-deployment-74bf776888-gj4rg": "1.715281946s",
+        "c-deployment-74bf776888-ldtcx": "1.715281345s",
+        "c-deployment-74bf776888-ql26x": "1.71528205s",
+        "c-deployment-74bf776888-rrj9r": "1.7152816309999999s",
+        "c-deployment-74bf776888-sf6rb": "1.7152813139999998s",
+        "c-deployment-74bf776888-vtf9p": "1.7152816s",
+        "custom-scheduler-77dbcd9f69-sdclh": "1.715282093s",
+        "d-deployment-fbc7d5c-w22q2": "1.715280837s"
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "created_but_not_ready_pods": [
+        "a-deployment-79b8b6d97c-r44bl",
+        "c-deployment-58545f9d59-b2m9d"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-79b8b6d97c-5jc6b": "1.7121222029999998s",
+        "a-deployment-79b8b6d97c-bd7tw": "1.712120986s",
+        "a-deployment-79b8b6d97c-bqpmf": "1.7121219920000001s",
+        "a-deployment-79b8b6d97c-br6g4": "1.71212115s",
+        "a-deployment-79b8b6d97c-c4kpn": "1.712122081s",
+        "a-deployment-79b8b6d97c-f44bx": "1.712121225s",
+        "a-deployment-79b8b6d97c-fkqgs": "1.712122066s",
+        "a-deployment-79b8b6d97c-k8bwt": "1.7121211650000001s",
+        "a-deployment-79b8b6d97c-lwxwf": "1.712121225s",
+        "a-deployment-79b8b6d97c-tvh5l": "1.7121211349999998s",
+        "a-deployment-79b8b6d97c-wcrcc": "1.712121255s",
+        "b-deployment-96944b6fd-4vk6r": "1.71212217s",
+        "b-deployment-96944b6fd-82wr9": "1.7121215699999999s",
+        "b-deployment-96944b6fd-8b4nb": "1.712122066s",
+        "b-deployment-96944b6fd-cgtmm": "1.7121216000000001s",
+        "b-deployment-96944b6fd-f58cp": "1.712120986s",
+        "b-deployment-96944b6fd-gp6fb": "1.7121211349999998s",
+        "b-deployment-96944b6fd-rw6rb": "1.7121216000000001s",
+        "b-deployment-96944b6fd-tx2r7": "1.7121211650000001s",
+        "c-deployment-58545f9d59-4nxs4": "1.712122036s",
+        "c-deployment-58545f9d59-ff89g": "1.7121222029999998s",
+        "c-deployment-58545f9d59-gblnp": "1.712121931s",
+        "c-deployment-58545f9d59-hh88c": "1.712122081s",
+        "c-deployment-58545f9d59-lp8vz": "1.7121211349999998s",
+        "c-deployment-58545f9d59-mmcgr": "1.71212118s",
+        "c-deployment-58545f9d59-thl4z": "1.7121220350000002s",
+        "c-deployment-58545f9d59-tw6wn": "1.71212115s",
+        "c-deployment-58545f9d59-vhqfw": "1.712120986s",
+        "c-deployment-58545f9d59-xmw7p": "1.7121220670000001s",
+        "d-deployment-5dc9c9b78b-8mw57": "1.712120986s",
+        "ecmus-scheduler-8494f8db8-2w2pf": "1.712120984s"
+    }
+}

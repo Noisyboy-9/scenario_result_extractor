@@ -1,0 +1,43 @@
+{
+    "created_but_not_ready_pods": [
+        "a-deployment-7989fcfbfd-84r5n",
+        "a-deployment-7989fcfbfd-nwd8s",
+        "a-deployment-7989fcfbfd-qddnw",
+        "a-deployment-7989fcfbfd-qw7hs",
+        "c-deployment-7954dd5668-gqsl2",
+        "c-deployment-7954dd5668-sd9pg",
+        "d-deployment-7b4776f58c-89hx5",
+        "d-deployment-7b4776f58c-pp2wl"
+    ],
+    "ready_pod_duration": {
+        "a-deployment-7989fcfbfd-72dsr": "1.710775331s",
+        "a-deployment-7989fcfbfd-d97w9": "1.710775162s",
+        "a-deployment-7989fcfbfd-fb5p8": "1.710775237s",
+        "a-deployment-7989fcfbfd-g8qgt": "1.710775222s",
+        "a-deployment-7989fcfbfd-gnzvw": "1.7107753319999999s",
+        "a-deployment-7989fcfbfd-rb4zj": "1.7107726699999999s",
+        "a-deployment-7989fcfbfd-tq9q6": "1.710775282s",
+        "b-deployment-68f688df8c-d8nmw": "1.710775508s",
+        "b-deployment-68f688df8c-fwtqg": "1.710768162s",
+        "b-deployment-68f688df8c-kwk9r": "1.710775553s",
+        "b-deployment-68f688df8c-psknh": "1.7107754929999999s",
+        "c-deployment-7954dd5668-bmzxl": "1.710773765s",
+        "c-deployment-7954dd5668-drxz2": "1.710776097s",
+        "c-deployment-7954dd5668-fmmdc": "1.7107760669999998s",
+        "c-deployment-7954dd5668-jdbzv": "1.710775162s",
+        "c-deployment-7954dd5668-ktxzp": "1.710775793s",
+        "c-deployment-7954dd5668-mcgcc": "1.710776139s",
+        "c-deployment-7954dd5668-pzg5v": "1.7107757970000002s",
+        "c-deployment-7954dd5668-qdbqn": "1.710775827s",
+        "c-deployment-7954dd5668-sr669": "1.710776127s",
+        "c-deployment-7954dd5668-vcv9v": "1.710775839s",
+        "c-deployment-7954dd5668-wh5kg": "1.710775914s",
+        "c-deployment-7954dd5668-wk4dc": "1.710776037s",
+        "c-deployment-7954dd5668-xbrdp": "1.710775763s",
+        "d-deployment-7b4776f58c-2ckgh": "1.710776038s",
+        "d-deployment-7b4776f58c-45fw8": "1.710776068s",
+        "d-deployment-7b4776f58c-69862": "1.710770519s",
+        "d-deployment-7b4776f58c-n4pth": "1.710776034s",
+        "ecmus-scheduler-7566d7c6f9-gr6sd": "1.710774817s"
+    }
+}
